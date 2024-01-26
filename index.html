@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Vina Widiana">
+<meta name="dcterms.date" content="2024-01-24">
+
+<title>Pengaruh Faktor Ekonomi Makro terhadap Pertumbuhan Ekonomi Indonesia: Analisis Multivariat 1990-2022.</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+<script src="index_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="index_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Pengaruh Faktor Ekonomi Makro terhadap Pertumbuhan Ekonomi Indonesia: Analisis Multivariat 1990-2022.</h1>
+<p class="subtitle lead">Metode Penelitian Politeknik APP Jakarta</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Vina Widiana </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 24, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="poltekapp.jpg" class="img-fluid"></p>
+<section id="pendahuluan" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+<section id="latar-belakang" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar belakang</h3>
+<p>Pertumbuhan ekonomi merupakan salah satu indikator penting dalam menilai kesejahteraan suatu negara. Di Indonesia, berbagai faktor ekonomi makro seperti pendapatan per kapita, populasi, tingkat pengangguran, konsumsi rumah tangga, investasi, ekspor, impor, dan inflasi berpotensi mempengaruhi pertumbuhan ekonomi.</p>
+<p>Dalam beberapa dekade terakhir, Indonesia telah mengalami berbagai perubahan signifikan dalam faktor-faktor ekonomi makro tersebut. Misalnya, tingkat pengangguran dan inflasi telah mengalami fluktuasi, sementara investasi dan ekspor telah menunjukkan tren pertumbuhan. Namun, bagaimana faktor-faktor ini mempengaruhi pertumbuhan ekonomi Indonesia masih belum sepenuhnya dipahami.</p>
+<p>Oleh karena itu, penelitian ini bertujuan untuk menganalisis pengaruh faktor-faktor ekonomi makro terhadap pertumbuhan ekonomi Indonesia dari tahun 1990 hingga 2022. Dengan menggunakan pendekatan analisis multivariat, penelitian ini diharapkan dapat memberikan pemahaman yang lebih mendalam tentang dinamika pertumbuhan ekonomi di Indonesia dan membantu pembuat kebijakan dalam merumuskan strategi ekonomi yang efektif.</p>
+</section>
+<section id="ruang-lingkup" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="ruang-lingkup"><span class="header-section-number">1.2</span> Ruang lingkup</h3>
+<p><strong>Ruang Lingkup Penelitian</strong></p>
+<p>Ruang lingkup penelitian ini mencakup aspek-aspek berikut:</p>
+<ol type="1">
+<li><p><strong>Geografis</strong>: Penelitian ini berfokus pada Indonesia. Semua data dan analisis akan berdasarkan konteks ekonomi Indonesia.</p></li>
+<li><p><strong>Waktu</strong>: Penelitian ini mencakup periode dari tahun 1990 hingga 2022. Semua data yang digunakan dalam penelitian ini akan diambil atau diestimasi untuk periode ini.</p></li>
+<li><p><strong>Variabel Ekonomi Makro</strong>: Penelitian ini akan menganalisis pengaruh berbagai faktor ekonomi makro terhadap pertumbuhan ekonomi, termasuk:</p>
+<ul>
+<li>Pendapatan Domestik Bruto (PDB)</li>
+<li>Pendapatan Domestik Bruto per kapita</li>
+<li>Populasi total</li>
+<li>Tingkat pengangguran</li>
+<li>Total nilai konsumsi masyarakat</li>
+<li>Besaran investasi yang masuk</li>
+<li>Besaran nilai ekspor</li>
+<li>Besaran nilai impor</li>
+<li>Besaran nilai inflasi</li>
+</ul></li>
+<li><p><strong>Metodologi</strong>: Penelitian ini akan menggunakan metode analisis multivariat untuk menentukan hubungan antara variabel-variabel tersebut dan pertumbuhan ekonomi.</p></li>
+</ol>
+</section>
+<section id="rumusan-masalah" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan masalah</h3>
+<ol type="1">
+<li><p>Bagaimana pengaruh Pendapatan Domestik Bruto (PDB) per kapita terhadap pertumbuhan ekonomi Indonesia dari tahun 1990 hingga 2022?</p></li>
+<li><p>Apakah tingkat pengangguran di Indonesia memiliki dampak signifikan terhadap pertumbuhan ekonomi selama periode tersebut?</p></li>
+<li><p>Bagaimana total nilai konsumsi masyarakat mempengaruhi pertumbuhan ekonomi Indonesia?</p></li>
+<li><p>Apakah besaran investasi yang masuk berdampak signifikan terhadap pertumbuhan ekonomi Indonesia?</p></li>
+<li><p>Bagaimana pengaruh besaran nilai ekspor dan impor terhadap pertumbuhan ekonomi Indonesia?</p></li>
+<li><p>Apakah inflasi memiliki dampak signifikan terhadap pertumbuhan ekonomi Indonesia selama periode tersebut?</p></li>
+</ol>
+<p>Rumusan masalah ini bertujuan untuk memahami bagaimana berbagai faktor ekonomi makro mempengaruhi pertumbuhan ekonomi di Indonesia.</p>
+</section>
+<section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan manfaat penelitian</h3>
+<p><strong>Tujuan Penelitian:</strong></p>
+<ol type="1">
+<li><p>Untuk memahami pengaruh variabel-variabel ekonomi makro terhadap pertumbuhan ekonomi di Indonesia.</p></li>
+<li><p>Untuk menganalisis tren dan pola pertumbuhan ekonomi Indonesia selama periode 1990-2022.</p></li>
+<li><p>Untuk memberikan rekomendasi kebijakan berdasarkan hasil analisis.</p></li>
+</ol>
+<p><strong>Manfaat Penelitian:</strong></p>
+<ol type="1">
+<li><p><strong>Bagi Mahasiswa</strong>: Penelitian ini dapat membantu mahasiswa dalam memahami aplikasi praktis dari konsep-konsep ekonomi makro yang mereka pelajari di kelas. Selain itu, penelitian ini juga dapat menjadi referensi untuk penelitian selanjutnya dan membantu mahasiswa dalam mengembangkan keterampilan analisis data dan penelitian mereka.</p></li>
+<li><p><strong>Bagi Akademisi dan Peneliti</strong>: Hasil penelitian ini dapat menjadi sumbangan pengetahuan baru dalam literatur ekonomi makro, khususnya yang berkaitan dengan pertumbuhan ekonomi di Indonesia. Penelitian ini juga dapat menjadi dasar untuk penelitian lebih lanjut tentang topik yang sama atau terkait.</p></li>
+<li><p><strong>Bagi Pembuat Kebijakan</strong>: Hasil penelitian ini dapat digunakan oleh pembuat kebijakan untuk merumuskan dan mengevaluasi kebijakan ekonomi, khususnya yang berkaitan dengan pertumbuhan ekonomi.</p></li>
+</ol>
+</section>
+<section id="package" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="package"><span class="header-section-number">1.5</span> Package</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"D:/METOPEL UAS/VINA METOPEL"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(writexl)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(WDI)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="studi-pustaka" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi pustaka</h2>
+<p><strong>Studi Pustaka</strong></p>
+<p>Pertumbuhan ekonomi di Indonesia dipengaruhi oleh berbagai faktor, termasuk ekspor, impor, investasi, konsumsi masyarakat, dan beberapa variabel makroekonomi lainnya. Berikut ini adalah analisis singkat berdasarkan data dan penelitian yang tersedia:</p>
+<ol type="1">
+<li><p><strong>Ekspor dan Impor</strong>: Beberapa penelitian menunjukkan bahwa ekspor dan impor memiliki pengaruh signifikan terhadap pertumbuhan ekonomi Indonesia. Ekspor berperan penting dalam pertumbuhan ekonomi dan penciptaan lapangan kerja. Sementara itu, impor juga memiliki peran penting dalam pertumbuhan ekonomi, terutama dalam konteks akses terhadap barang dan teknologi asing yang dapat meningkatkan produktivitas dan efisiensi industri domestik.</p></li>
+<li><p><strong>Investasi</strong>: Investasi, baik domestik maupun asing langsung (FDI), berkontribusi signifikan terhadap pertumbuhan ekonomi Indonesia. Investasi meningkatkan stok modal, yang pada gilirannya meningkatkan produktivitas tenaga kerja dan kapasitas produksi.</p></li>
+<li><p><strong>Konsumsi Masyarakat</strong>: Konsumsi rumah tangga merupakan kontributor terbesar pada pertumbuhan Produk Domestik Bruto (PDB) nasional. Pada 2022, kontribusinya mencapai 51,87% dan menyumbang 2,61% terhadap pertumbuhan ekonomi Indonesia yang tercatat 5,31%.</p></li>
+<li><p><strong>Variabel Makroekonomi Lainnya</strong>: Variabel makroekonomi lain seperti tingkat pengangguran, inflasi, dan nilai tukar juga mempengaruhi pertumbuhan ekonomi. Sebagai contoh, penelitian menunjukkan bahwa tingkat pengangguran berpengaruh negatif terhadap pertumbuhan ekonomi.</p></li>
+</ol>
+<p>Dalam konteks Indonesia, pertumbuhan ekonomi tahun 2022 mencapai 5,31%, lebih tinggi dibanding capaian tahun 2021 yang mengalami pertumbuhan sebesar 3,70 persen. Peningkatan ini didorong oleh akselerasi konsumsi swasta setelah dicabutnya pembatasan kegiatan masyarakat, serta kenaikan harga komoditas.</p>
+<p>Namun, perlu diingat bahwa pertumbuhan ekonomi adalah fenomena yang kompleks dan dipengaruhi oleh banyak faktor yang saling berinteraksi. Oleh karena itu, penting untuk melakukan analisis yang komprehensif dan mempertimbangkan semua faktor yang relevan saat mengevaluasi dan merencanakan kebijakan ekonomi.</p>
+</section>
+<section id="metode-penelitian" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">3</span> Metode penelitian</h2>
+<section id="data" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h3>
+<table class="table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">tahun</th>
+<th style="text-align: center;">pdb</th>
+<th style="text-align: center;">pdbp</th>
+<th style="text-align: center;">pop</th>
+<th style="text-align: center;">peng</th>
+<th style="text-align: center;">kons</th>
+<th style="text-align: center;">inv</th>
+<th style="text-align: center;">eks</th>
+<th style="text-align: center;">imp</th>
+<th style="text-align: center;">infl</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1990</td>
+<td style="text-align: center;">1,06E+11</td>
+<td style="text-align: center;">582,679</td>
+<td style="text-align: center;">1,82E+08</td>
+<td style="text-align: center;">2,5</td>
+<td style="text-align: center;">6,74E+10</td>
+<td style="text-align: center;">32,70769</td>
+<td style="text-align: center;">2,9E+10</td>
+<td style="text-align: center;">2,72E+10</td>
+<td style="text-align: center;">7,819191</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1991</td>
+<td style="text-align: center;">1,17E+11</td>
+<td style="text-align: center;">629,1607</td>
+<td style="text-align: center;">1,85E+08</td>
+<td style="text-align: center;">2,62</td>
+<td style="text-align: center;">7,49E+10</td>
+<td style="text-align: center;">31,86943</td>
+<td style="text-align: center;">3,31E+10</td>
+<td style="text-align: center;">3,09E+10</td>
+<td style="text-align: center;">9,419058</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1992</td>
+<td style="text-align: center;">1,28E+11</td>
+<td style="text-align: center;">678,9777</td>
+<td style="text-align: center;">1,89E+08</td>
+<td style="text-align: center;">2,73</td>
+<td style="text-align: center;">8,05E+10</td>
+<td style="text-align: center;">30,17583</td>
+<td style="text-align: center;">3,88E+10</td>
+<td style="text-align: center;">3,47E+10</td>
+<td style="text-align: center;">7,523517</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1993</td>
+<td style="text-align: center;">1,58E+11</td>
+<td style="text-align: center;">824,0791</td>
+<td style="text-align: center;">1,92E+08</td>
+<td style="text-align: center;">2,78</td>
+<td style="text-align: center;">9,25E+10</td>
+<td style="text-align: center;">28,28067</td>
+<td style="text-align: center;">4,23E+10</td>
+<td style="text-align: center;">3,76E+10</td>
+<td style="text-align: center;">9,671893</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1994</td>
+<td style="text-align: center;">1,77E+11</td>
+<td style="text-align: center;">907,4718</td>
+<td style="text-align: center;">1,95E+08</td>
+<td style="text-align: center;">4,37</td>
+<td style="text-align: center;">1,06E+11</td>
+<td style="text-align: center;">29,57069</td>
+<td style="text-align: center;">4,69E+10</td>
+<td style="text-align: center;">4,49E+10</td>
+<td style="text-align: center;">8,532005</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1995</td>
+<td style="text-align: center;">2,02E+11</td>
+<td style="text-align: center;">1020,147</td>
+<td style="text-align: center;">1,98E+08</td>
+<td style="text-align: center;">4,597</td>
+<td style="text-align: center;">1,24E+11</td>
+<td style="text-align: center;">30,42981</td>
+<td style="text-align: center;">5,32E+10</td>
+<td style="text-align: center;">5,59E+10</td>
+<td style="text-align: center;">9,420323</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1996</td>
+<td style="text-align: center;">2,27E+11</td>
+<td style="text-align: center;">1129,093</td>
+<td style="text-align: center;">2,01E+08</td>
+<td style="text-align: center;">4,86</td>
+<td style="text-align: center;">1,42E+11</td>
+<td style="text-align: center;">31,60236</td>
+<td style="text-align: center;">5,87E+10</td>
+<td style="text-align: center;">6,01E+10</td>
+<td style="text-align: center;">7,973281</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1997</td>
+<td style="text-align: center;">2,16E+11</td>
+<td style="text-align: center;">1054,347</td>
+<td style="text-align: center;">2,05E+08</td>
+<td style="text-align: center;">4,68</td>
+<td style="text-align: center;">1,33E+11</td>
+<td style="text-align: center;">30,30768</td>
+<td style="text-align: center;">6,01E+10</td>
+<td style="text-align: center;">6,07E+10</td>
+<td style="text-align: center;">6,226142</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1998</td>
+<td style="text-align: center;">9,54E+10</td>
+<td style="text-align: center;">459,1919</td>
+<td style="text-align: center;">2,08E+08</td>
+<td style="text-align: center;">5,46</td>
+<td style="text-align: center;">6,47E+10</td>
+<td style="text-align: center;">27,42951</td>
+<td style="text-align: center;">5,06E+10</td>
+<td style="text-align: center;">4,12E+10</td>
+<td style="text-align: center;">58,45104</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">1,4E+11</td>
+<td style="text-align: center;">663,5232</td>
+<td style="text-align: center;">2,11E+08</td>
+<td style="text-align: center;">6,36</td>
+<td style="text-align: center;">1,04E+11</td>
+<td style="text-align: center;">22,13876</td>
+<td style="text-align: center;">4,97E+10</td>
+<td style="text-align: center;">3,84E+10</td>
+<td style="text-align: center;">20,47783</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">1,65E+11</td>
+<td style="text-align: center;">770,8654</td>
+<td style="text-align: center;">2,14E+08</td>
+<td style="text-align: center;">6,08</td>
+<td style="text-align: center;">1,02E+11</td>
+<td style="text-align: center;">22,2457</td>
+<td style="text-align: center;">6,76E+10</td>
+<td style="text-align: center;">5,03E+10</td>
+<td style="text-align: center;">3,688619</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2001</td>
+<td style="text-align: center;">1,6E+11</td>
+<td style="text-align: center;">739,0039</td>
+<td style="text-align: center;">2,17E+08</td>
+<td style="text-align: center;">6,08</td>
+<td style="text-align: center;">1,01E+11</td>
+<td style="text-align: center;">22,53927</td>
+<td style="text-align: center;">6,26E+10</td>
+<td style="text-align: center;">4,94E+10</td>
+<td style="text-align: center;">11,50011</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2002</td>
+<td style="text-align: center;">1,96E+11</td>
+<td style="text-align: center;">888,9014</td>
+<td style="text-align: center;">2,2E+08</td>
+<td style="text-align: center;">6,6</td>
+<td style="text-align: center;">1,32E+11</td>
+<td style="text-align: center;">21,40407</td>
+<td style="text-align: center;">6,4E+10</td>
+<td style="text-align: center;">5,16E+10</td>
+<td style="text-align: center;">11,90012</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2003</td>
+<td style="text-align: center;">2,35E+11</td>
+<td style="text-align: center;">1052,413</td>
+<td style="text-align: center;">2,23E+08</td>
+<td style="text-align: center;">6,66</td>
+<td style="text-align: center;">1,6E+11</td>
+<td style="text-align: center;">25,5985</td>
+<td style="text-align: center;">7,16E+10</td>
+<td style="text-align: center;">5,43E+10</td>
+<td style="text-align: center;">6,757317</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2004</td>
+<td style="text-align: center;">2,57E+11</td>
+<td style="text-align: center;">1136,755</td>
+<td style="text-align: center;">2,26E+08</td>
+<td style="text-align: center;">7,3</td>
+<td style="text-align: center;">1,71E+11</td>
+<td style="text-align: center;">24,05637</td>
+<td style="text-align: center;">8,27E+10</td>
+<td style="text-align: center;">7,07E+10</td>
+<td style="text-align: center;">6,06406</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2005</td>
+<td style="text-align: center;">2,86E+11</td>
+<td style="text-align: center;">1249,398</td>
+<td style="text-align: center;">2,29E+08</td>
+<td style="text-align: center;">7,94</td>
+<td style="text-align: center;">1,84E+11</td>
+<td style="text-align: center;">25,08141</td>
+<td style="text-align: center;">9,74E+10</td>
+<td style="text-align: center;">8,55E+10</td>
+<td style="text-align: center;">10,4532</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2006</td>
+<td style="text-align: center;">3,65E+11</td>
+<td style="text-align: center;">1572,798</td>
+<td style="text-align: center;">2,32E+08</td>
+<td style="text-align: center;">7,55</td>
+<td style="text-align: center;">2,28E+11</td>
+<td style="text-align: center;">25,40022</td>
+<td style="text-align: center;">1,13E+11</td>
+<td style="text-align: center;">9,34E+10</td>
+<td style="text-align: center;">13,10867</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2007</td>
+<td style="text-align: center;">4,32E+11</td>
+<td style="text-align: center;">1840,33</td>
+<td style="text-align: center;">2,35E+08</td>
+<td style="text-align: center;">8,06</td>
+<td style="text-align: center;">2,75E+11</td>
+<td style="text-align: center;">24,92028</td>
+<td style="text-align: center;">1,27E+11</td>
+<td style="text-align: center;">1,1E+11</td>
+<td style="text-align: center;">6,406563</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2008</td>
+<td style="text-align: center;">5,1E+11</td>
+<td style="text-align: center;">2144,39</td>
+<td style="text-align: center;">2,38E+08</td>
+<td style="text-align: center;">7,21</td>
+<td style="text-align: center;">3,09E+11</td>
+<td style="text-align: center;">27,81624</td>
+<td style="text-align: center;">1,52E+11</td>
+<td style="text-align: center;">1,47E+11</td>
+<td style="text-align: center;">10,22666</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2009</td>
+<td style="text-align: center;">5,4E+11</td>
+<td style="text-align: center;">2239,095</td>
+<td style="text-align: center;">2,41E+08</td>
+<td style="text-align: center;">6,11</td>
+<td style="text-align: center;">3,17E+11</td>
+<td style="text-align: center;">30,98519</td>
+<td style="text-align: center;">1,3E+11</td>
+<td style="text-align: center;">1,15E+11</td>
+<td style="text-align: center;">4,386416</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2010</td>
+<td style="text-align: center;">7,55E+11</td>
+<td style="text-align: center;">3094,443</td>
+<td style="text-align: center;">2,44E+08</td>
+<td style="text-align: center;">5,61</td>
+<td style="text-align: center;">4,24E+11</td>
+<td style="text-align: center;">32,88012</td>
+<td style="text-align: center;">1,83E+11</td>
+<td style="text-align: center;">1,69E+11</td>
+<td style="text-align: center;">5,134204</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2011</td>
+<td style="text-align: center;">8,93E+11</td>
+<td style="text-align: center;">3613,801</td>
+<td style="text-align: center;">2,47E+08</td>
+<td style="text-align: center;">5,15</td>
+<td style="text-align: center;">4,95E+11</td>
+<td style="text-align: center;">32,98433</td>
+<td style="text-align: center;">2,35E+11</td>
+<td style="text-align: center;">2,13E+11</td>
+<td style="text-align: center;">5,356048</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2012</td>
+<td style="text-align: center;">9,18E+11</td>
+<td style="text-align: center;">3668,212</td>
+<td style="text-align: center;">2,5E+08</td>
+<td style="text-align: center;">4,47</td>
+<td style="text-align: center;">5,18E+11</td>
+<td style="text-align: center;">35,07159</td>
+<td style="text-align: center;">2,26E+11</td>
+<td style="text-align: center;">2,29E+11</td>
+<td style="text-align: center;">4,2795</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2013</td>
+<td style="text-align: center;">9,13E+11</td>
+<td style="text-align: center;">3602,886</td>
+<td style="text-align: center;">2,53E+08</td>
+<td style="text-align: center;">4,34</td>
+<td style="text-align: center;">5,19E+11</td>
+<td style="text-align: center;">33,83136</td>
+<td style="text-align: center;">2,18E+11</td>
+<td style="text-align: center;">2,26E+11</td>
+<td style="text-align: center;">6,412513</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2014</td>
+<td style="text-align: center;">8,91E+11</td>
+<td style="text-align: center;">3476,625</td>
+<td style="text-align: center;">2,56E+08</td>
+<td style="text-align: center;">4,05</td>
+<td style="text-align: center;">5,09E+11</td>
+<td style="text-align: center;">34,60034</td>
+<td style="text-align: center;">2,11E+11</td>
+<td style="text-align: center;">2,17E+11</td>
+<td style="text-align: center;">6,394925</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2015</td>
+<td style="text-align: center;">8,61E+11</td>
+<td style="text-align: center;">3322,582</td>
+<td style="text-align: center;">2,59E+08</td>
+<td style="text-align: center;">4,51</td>
+<td style="text-align: center;">4,95E+11</td>
+<td style="text-align: center;">34,06279</td>
+<td style="text-align: center;">1,82E+11</td>
+<td style="text-align: center;">1,79E+11</td>
+<td style="text-align: center;">6,363121</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">9,32E+11</td>
+<td style="text-align: center;">3558,819</td>
+<td style="text-align: center;">2,62E+08</td>
+<td style="text-align: center;">4,3</td>
+<td style="text-align: center;">5,39E+11</td>
+<td style="text-align: center;">33,85874</td>
+<td style="text-align: center;">1,78E+11</td>
+<td style="text-align: center;">1,71E+11</td>
+<td style="text-align: center;">3,525805</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2017</td>
+<td style="text-align: center;">1,02E+12</td>
+<td style="text-align: center;">3839,785</td>
+<td style="text-align: center;">2,64E+08</td>
+<td style="text-align: center;">3,78</td>
+<td style="text-align: center;">5,82E+11</td>
+<td style="text-align: center;">33,71059</td>
+<td style="text-align: center;">2,05E+11</td>
+<td style="text-align: center;">1,95E+11</td>
+<td style="text-align: center;">3,808798</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2018</td>
+<td style="text-align: center;">1,04E+12</td>
+<td style="text-align: center;">3902,662</td>
+<td style="text-align: center;">2,67E+08</td>
+<td style="text-align: center;">4,39</td>
+<td style="text-align: center;">5,94E+11</td>
+<td style="text-align: center;">34,57059</td>
+<td style="text-align: center;">2,19E+11</td>
+<td style="text-align: center;">2,3E+11</td>
+<td style="text-align: center;">3,198346</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">1,12E+12</td>
+<td style="text-align: center;">4151,228</td>
+<td style="text-align: center;">2,7E+08</td>
+<td style="text-align: center;">3,59</td>
+<td style="text-align: center;">6,48E+11</td>
+<td style="text-align: center;">33,78014</td>
+<td style="text-align: center;">2,08E+11</td>
+<td style="text-align: center;">2,13E+11</td>
+<td style="text-align: center;">3,030587</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">1,06E+12</td>
+<td style="text-align: center;">3895,618</td>
+<td style="text-align: center;">2,72E+08</td>
+<td style="text-align: center;">4,25</td>
+<td style="text-align: center;">6,24E+11</td>
+<td style="text-align: center;">32,34341</td>
+<td style="text-align: center;">1,84E+11</td>
+<td style="text-align: center;">1,66E+11</td>
+<td style="text-align: center;">1,920968</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">1,19E+12</td>
+<td style="text-align: center;">4334,216</td>
+<td style="text-align: center;">2,74E+08</td>
+<td style="text-align: center;">3,83</td>
+<td style="text-align: center;">6,6E+11</td>
+<td style="text-align: center;">31,44898</td>
+<td style="text-align: center;">2,54E+11</td>
+<td style="text-align: center;">2,23E+11</td>
+<td style="text-align: center;">1,56013</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">1,32E+12</td>
+<td style="text-align: center;">4787,999</td>
+<td style="text-align: center;">2,76E+08</td>
+<td style="text-align: center;">3,554</td>
+<td style="text-align: center;">7E+11</td>
+<td style="text-align: center;">29,74534</td>
+<td style="text-align: center;">3,23E+11</td>
+<td style="text-align: center;">2,76E+11</td>
+<td style="text-align: center;">4,209464</td>
+</tr>
+</tbody>
+</table>
+<p>Penelitian ini berfokus pada analisis pengaruh variabel-variabel ekonomi makro, termasuk Pendapatan Domestik Bruto (PDB), PDB per kapita, populasi total, tingkat pengangguran, total nilai konsumsi masyarakat, besaran investasi yang masuk, besaran nilai ekspor dan impor, serta inflasi, terhadap pertumbuhan ekonomi Indonesia selama periode 1990 hingga 2022. Tujuannya adalah untuk memahami dinamika pertumbuhan ekonomi di Indonesia dan memberikan rekomendasi kebijakan berdasarkan hasil analisis. Penelitian ini diharapkan dapat menjadi referensi bagi mahasiswa, akademisi, peneliti, dan pembuat kebijakan dalam merumuskan strategi ekonomi yang efektif.</p>
+</section>
+<section id="metode-analisis" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">3.2</span> Metode analisis</h3>
+<p>Berikut adalah contoh model analisis yang dapat digunakan dalam penelitian ini:</p>
+<p>Model yang digunakan dalam penelitian ini adalah model regresi linier berganda. Model ini digunakan untuk menganalisis hubungan antara satu variabel dependen (Y) dan beberapa variabel independen (X). Dalam konteks penelitian ini, variabel dependen adalah pertumbuhan ekonomi, sedangkan variabel independennya adalah variabel-variabel ekonomi makro yang telah disebutkan sebelumnya.</p>
+<p>Model regresi linier berganda dapat ditulis dalam bentuk matematika sebagai berikut:</p>
+<p><span class="math display">\[Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + \beta_3X_3 + \ldots + \beta_nX_n + \epsilon\]</span></p>
+<p>dimana: - <span class="math inline">\(Y\)</span> adalah pertumbuhan ekonomi - <span class="math inline">\(\beta_0\)</span> adalah konstanta - <span class="math inline">\(\beta_1, \beta_2, \ldots, \beta_n\)</span> adalah koefisien regresi yang menunjukkan pengaruh variabel independen terhadap variabel dependen - <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> adalah variabel-variabel independen (dalam hal ini, variabel-variabel ekonomi makro) - <span class="math inline">\(\epsilon\)</span> adalah galat atau kesalahan pengukuran</p>
+<p>Dengan menggunakan model ini, kita dapat mengestimasi pengaruh masing-masing variabel ekonomi makro terhadap pertumbuhan ekonomi. Selain itu, kita juga dapat menguji signifikansi pengaruh tersebut menggunakan uji t-statistik atau uji F. Jika nilai p kurang dari 0,05, maka kita dapat menyimpulkan bahwa variabel tersebut memiliki pengaruh yang signifikan terhadap pertumbuhan ekonomi.</p>
+</section>
+</section>
+<section id="pembahasan" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">4</span> Pembahasan</h2>
+<section id="pembahasan-masalah" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">4.1</span> Pembahasan masalah</h3>
+<section id="plot-dan-data" class="level4" data-number="4.1.1">
+<h4 data-number="4.1.1" class="anchored" data-anchor-id="plot-dan-data"><span class="header-section-number">4.1.1</span> Plot dan Data</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#impor dataset</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">read_excel</span>(<span class="st">"pertumbuhan.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 33 × 10
+    year           pdb  pdbp       pop  peng    kons   inv     eks     imp  infl
+   &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;
+ 1  1990 106140727334.  583. 182159874  2.5  6.74e10  32.7 2.90e10 2.72e10  7.82
+ 2  1991 116621996217.  629. 185361228  2.62 7.49e10  31.9 3.31e10 3.09e10  9.42
+ 3  1992 128026966580.  679. 188558416  2.73 8.05e10  30.2 3.88e10 3.47e10  7.52
+ 4  1993 158006700302.  824. 191737287  2.78 9.25e10  28.3 4.23e10 3.76e10  9.67
+ 5  1994 176892143932.  907. 194928533  4.37 1.06e11  29.6 4.69e10 4.49e10  8.53
+ 6  1995 202132028723. 1020. 198140162  4.60 1.24e11  30.4 5.32e10 5.59e10  9.42
+ 7  1996 227369679375. 1129. 201373791  4.86 1.42e11  31.6 5.87e10 6.01e10  7.97
+ 8  1997 215748998610. 1054. 204628007  4.68 1.33e11  30.3 6.01e10 6.07e10  6.23
+ 9  1998  95445547873.  459. 207855486  5.46 6.47e10  27.4 5.06e10 4.12e10 58.5 
+10  1999 140001351215.  664. 210996910  6.36 1.04e11  22.1 4.97e10 3.84e10 20.5 
+# ℹ 23 more rows</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"pertumbuhan.xlsx"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kbl</span>(dat) <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>, <span class="st">"condensed"</span>, <span class="st">"responsive"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">year</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pdb</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pdbp</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pop</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">peng</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">kons</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">inv</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">eks</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">imp</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">infl</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1990</td>
+<td style="text-align: right;">1.061407e+11</td>
+<td style="text-align: right;">582.6790</td>
+<td style="text-align: right;">182159874</td>
+<td style="text-align: right;">2.500</td>
+<td style="text-align: right;">67388496928</td>
+<td style="text-align: right;">32.70769</td>
+<td style="text-align: right;">28982531183</td>
+<td style="text-align: right;">27157275247</td>
+<td style="text-align: right;">7.819191</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1991</td>
+<td style="text-align: right;">1.166220e+11</td>
+<td style="text-align: right;">629.1607</td>
+<td style="text-align: right;">185361228</td>
+<td style="text-align: right;">2.620</td>
+<td style="text-align: right;">74896533640</td>
+<td style="text-align: right;">31.86943</td>
+<td style="text-align: right;">33063806609</td>
+<td style="text-align: right;">30891188671</td>
+<td style="text-align: right;">9.419058</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1992</td>
+<td style="text-align: right;">1.280270e+11</td>
+<td style="text-align: right;">678.9777</td>
+<td style="text-align: right;">188558416</td>
+<td style="text-align: right;">2.730</td>
+<td style="text-align: right;">80452086782</td>
+<td style="text-align: right;">30.17583</td>
+<td style="text-align: right;">38801726176</td>
+<td style="text-align: right;">34720875700</td>
+<td style="text-align: right;">7.523517</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1993</td>
+<td style="text-align: right;">1.580067e+11</td>
+<td style="text-align: right;">824.0791</td>
+<td style="text-align: right;">191737287</td>
+<td style="text-align: right;">2.780</td>
+<td style="text-align: right;">92452872768</td>
+<td style="text-align: right;">28.28067</td>
+<td style="text-align: right;">42274397859</td>
+<td style="text-align: right;">37555937063</td>
+<td style="text-align: right;">9.671893</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1994</td>
+<td style="text-align: right;">1.768921e+11</td>
+<td style="text-align: right;">907.4718</td>
+<td style="text-align: right;">194928533</td>
+<td style="text-align: right;">4.370</td>
+<td style="text-align: right;">105574129353</td>
+<td style="text-align: right;">29.57069</td>
+<td style="text-align: right;">46896633114</td>
+<td style="text-align: right;">44869883142</td>
+<td style="text-align: right;">8.532005</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1995</td>
+<td style="text-align: right;">2.021320e+11</td>
+<td style="text-align: right;">1020.1467</td>
+<td style="text-align: right;">198140162</td>
+<td style="text-align: right;">4.597</td>
+<td style="text-align: right;">124466951683</td>
+<td style="text-align: right;">30.42981</td>
+<td style="text-align: right;">53185312942</td>
+<td style="text-align: right;">55882279824</td>
+<td style="text-align: right;">9.420323</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1996</td>
+<td style="text-align: right;">2.273697e+11</td>
+<td style="text-align: right;">1129.0927</td>
+<td style="text-align: right;">201373791</td>
+<td style="text-align: right;">4.860</td>
+<td style="text-align: right;">141781326047</td>
+<td style="text-align: right;">31.60236</td>
+<td style="text-align: right;">58717201042</td>
+<td style="text-align: right;">60116979038</td>
+<td style="text-align: right;">7.973281</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1997</td>
+<td style="text-align: right;">2.157490e+11</td>
+<td style="text-align: right;">1054.3474</td>
+<td style="text-align: right;">204628007</td>
+<td style="text-align: right;">4.680</td>
+<td style="text-align: right;">133076708202</td>
+<td style="text-align: right;">30.30768</td>
+<td style="text-align: right;">60106038404</td>
+<td style="text-align: right;">60700151259</td>
+<td style="text-align: right;">6.226142</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1998</td>
+<td style="text-align: right;">9.544555e+10</td>
+<td style="text-align: right;">459.1919</td>
+<td style="text-align: right;">207855486</td>
+<td style="text-align: right;">5.460</td>
+<td style="text-align: right;">64694378233</td>
+<td style="text-align: right;">27.42951</td>
+<td style="text-align: right;">50555726235</td>
+<td style="text-align: right;">41249712042</td>
+<td style="text-align: right;">58.451045</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1999</td>
+<td style="text-align: right;">1.400014e+11</td>
+<td style="text-align: right;">663.5232</td>
+<td style="text-align: right;">210996910</td>
+<td style="text-align: right;">6.360</td>
+<td style="text-align: right;">103522314705</td>
+<td style="text-align: right;">22.13876</td>
+<td style="text-align: right;">49720260590</td>
+<td style="text-align: right;">38402067922</td>
+<td style="text-align: right;">20.477831</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">1.650210e+11</td>
+<td style="text-align: right;">770.8654</td>
+<td style="text-align: right;">214072421</td>
+<td style="text-align: right;">6.080</td>
+<td style="text-align: right;">101736066246</td>
+<td style="text-align: right;">22.24570</td>
+<td style="text-align: right;">67621169166</td>
+<td style="text-align: right;">50264686470</td>
+<td style="text-align: right;">3.688619</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">1.604469e+11</td>
+<td style="text-align: right;">739.0039</td>
+<td style="text-align: right;">217112437</td>
+<td style="text-align: right;">6.080</td>
+<td style="text-align: right;">101322506472</td>
+<td style="text-align: right;">22.53927</td>
+<td style="text-align: right;">62625875834</td>
+<td style="text-align: right;">49355195402</td>
+<td style="text-align: right;">11.500115</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">1.956606e+11</td>
+<td style="text-align: right;">888.9014</td>
+<td style="text-align: right;">220115092</td>
+<td style="text-align: right;">6.600</td>
+<td style="text-align: right;">132310082252</td>
+<td style="text-align: right;">21.40407</td>
+<td style="text-align: right;">63956798805</td>
+<td style="text-align: right;">51638437161</td>
+<td style="text-align: right;">11.900118</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">2.347725e+11</td>
+<td style="text-align: right;">1052.4132</td>
+<td style="text-align: right;">223080121</td>
+<td style="text-align: right;">6.660</td>
+<td style="text-align: right;">159969308159</td>
+<td style="text-align: right;">25.59850</td>
+<td style="text-align: right;">71553141045</td>
+<td style="text-align: right;">54323622341</td>
+<td style="text-align: right;">6.757317</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">2.568369e+11</td>
+<td style="text-align: right;">1136.7552</td>
+<td style="text-align: right;">225938595</td>
+<td style="text-align: right;">7.300</td>
+<td style="text-align: right;">171486082504</td>
+<td style="text-align: right;">24.05637</td>
+<td style="text-align: right;">82744351781</td>
+<td style="text-align: right;">70744690514</td>
+<td style="text-align: right;">6.064060</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">2.858686e+11</td>
+<td style="text-align: right;">1249.3977</td>
+<td style="text-align: right;">228805144</td>
+<td style="text-align: right;">7.940</td>
+<td style="text-align: right;">183992161901</td>
+<td style="text-align: right;">25.08141</td>
+<td style="text-align: right;">97387627566</td>
+<td style="text-align: right;">85533801154</td>
+<td style="text-align: right;">10.453198</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2006</td>
+<td style="text-align: right;">3.645705e+11</td>
+<td style="text-align: right;">1572.7979</td>
+<td style="text-align: right;">231797427</td>
+<td style="text-align: right;">7.550</td>
+<td style="text-align: right;">228472903174</td>
+<td style="text-align: right;">25.40022</td>
+<td style="text-align: right;">113143425288</td>
+<td style="text-align: right;">93411754076</td>
+<td style="text-align: right;">13.108672</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2007</td>
+<td style="text-align: right;">4.322167e+11</td>
+<td style="text-align: right;">1840.3299</td>
+<td style="text-align: right;">234858289</td>
+<td style="text-align: right;">8.060</td>
+<td style="text-align: right;">274642139810</td>
+<td style="text-align: right;">24.92028</td>
+<td style="text-align: right;">127226102177</td>
+<td style="text-align: right;">109755093425</td>
+<td style="text-align: right;">6.406563</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2008</td>
+<td style="text-align: right;">5.102286e+11</td>
+<td style="text-align: right;">2144.3895</td>
+<td style="text-align: right;">237936543</td>
+<td style="text-align: right;">7.210</td>
+<td style="text-align: right;">309306990310</td>
+<td style="text-align: right;">27.81624</td>
+<td style="text-align: right;">152090401422</td>
+<td style="text-align: right;">146706628549</td>
+<td style="text-align: right;">10.226665</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2009</td>
+<td style="text-align: right;">5.395801e+11</td>
+<td style="text-align: right;">2239.0953</td>
+<td style="text-align: right;">240981299</td>
+<td style="text-align: right;">6.110</td>
+<td style="text-align: right;">316748382750</td>
+<td style="text-align: right;">30.98519</td>
+<td style="text-align: right;">130357798591</td>
+<td style="text-align: right;">115216544854</td>
+<td style="text-align: right;">4.386416</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">7.550942e+11</td>
+<td style="text-align: right;">3094.4431</td>
+<td style="text-align: right;">244016173</td>
+<td style="text-align: right;">5.610</td>
+<td style="text-align: right;">424492610027</td>
+<td style="text-align: right;">32.88012</td>
+<td style="text-align: right;">183480562961</td>
+<td style="text-align: right;">169158027607</td>
+<td style="text-align: right;">5.134204</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2011</td>
+<td style="text-align: right;">8.929691e+11</td>
+<td style="text-align: right;">3613.8009</td>
+<td style="text-align: right;">247099697</td>
+<td style="text-align: right;">5.150</td>
+<td style="text-align: right;">494913450646</td>
+<td style="text-align: right;">32.98433</td>
+<td style="text-align: right;">235095129136</td>
+<td style="text-align: right;">212996885270</td>
+<td style="text-align: right;">5.356048</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2012</td>
+<td style="text-align: right;">9.178699e+11</td>
+<td style="text-align: right;">3668.2121</td>
+<td style="text-align: right;">250222695</td>
+<td style="text-align: right;">4.470</td>
+<td style="text-align: right;">517579927881</td>
+<td style="text-align: right;">35.07159</td>
+<td style="text-align: right;">225744403268</td>
+<td style="text-align: right;">229362102380</td>
+<td style="text-align: right;">4.279500</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2013</td>
+<td style="text-align: right;">9.125241e+11</td>
+<td style="text-align: right;">3602.8855</td>
+<td style="text-align: right;">253275918</td>
+<td style="text-align: right;">4.340</td>
+<td style="text-align: right;">518582560786</td>
+<td style="text-align: right;">33.83136</td>
+<td style="text-align: right;">218308408831</td>
+<td style="text-align: right;">225519356300</td>
+<td style="text-align: right;">6.412513</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2014</td>
+<td style="text-align: right;">8.908148e+11</td>
+<td style="text-align: right;">3476.6249</td>
+<td style="text-align: right;">256229761</td>
+<td style="text-align: right;">4.050</td>
+<td style="text-align: right;">509003681733</td>
+<td style="text-align: right;">34.60034</td>
+<td style="text-align: right;">210820082828</td>
+<td style="text-align: right;">217485215773</td>
+<td style="text-align: right;">6.394925</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2015</td>
+<td style="text-align: right;">8.608542e+11</td>
+<td style="text-align: right;">3322.5817</td>
+<td style="text-align: right;">259091970</td>
+<td style="text-align: right;">4.510</td>
+<td style="text-align: right;">494560910748</td>
+<td style="text-align: right;">34.06279</td>
+<td style="text-align: right;">182158298805</td>
+<td style="text-align: right;">178863652303</td>
+<td style="text-align: right;">6.363121</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">9.318774e+11</td>
+<td style="text-align: right;">3558.8189</td>
+<td style="text-align: right;">261850182</td>
+<td style="text-align: right;">4.300</td>
+<td style="text-align: right;">538874867134</td>
+<td style="text-align: right;">33.85874</td>
+<td style="text-align: right;">177886012744</td>
+<td style="text-align: right;">170835000833</td>
+<td style="text-align: right;">3.525805</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">1.015619e+12</td>
+<td style="text-align: right;">3839.7851</td>
+<td style="text-align: right;">264498852</td>
+<td style="text-align: right;">3.780</td>
+<td style="text-align: right;">581701454953</td>
+<td style="text-align: right;">33.71059</td>
+<td style="text-align: right;">204924485910</td>
+<td style="text-align: right;">194777319199</td>
+<td style="text-align: right;">3.808798</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">1.042272e+12</td>
+<td style="text-align: right;">3902.6617</td>
+<td style="text-align: right;">267066843</td>
+<td style="text-align: right;">4.390</td>
+<td style="text-align: right;">593885231700</td>
+<td style="text-align: right;">34.57059</td>
+<td style="text-align: right;">218905647885</td>
+<td style="text-align: right;">230045612383</td>
+<td style="text-align: right;">3.198346</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">1.119100e+12</td>
+<td style="text-align: right;">4151.2276</td>
+<td style="text-align: right;">269582878</td>
+<td style="text-align: right;">3.590</td>
+<td style="text-align: right;">648299754544</td>
+<td style="text-align: right;">33.78014</td>
+<td style="text-align: right;">208057763662</td>
+<td style="text-align: right;">213034646338</td>
+<td style="text-align: right;">3.030587</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">1.059055e+12</td>
+<td style="text-align: right;">3895.6182</td>
+<td style="text-align: right;">271857970</td>
+<td style="text-align: right;">4.250</td>
+<td style="text-align: right;">624142240216</td>
+<td style="text-align: right;">32.34341</td>
+<td style="text-align: right;">183546577016</td>
+<td style="text-align: right;">165646843305</td>
+<td style="text-align: right;">1.920968</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">1.186505e+12</td>
+<td style="text-align: right;">4334.2160</td>
+<td style="text-align: right;">273753191</td>
+<td style="text-align: right;">3.830</td>
+<td style="text-align: right;">660039197113</td>
+<td style="text-align: right;">31.44898</td>
+<td style="text-align: right;">254008548673</td>
+<td style="text-align: right;">222939963036</td>
+<td style="text-align: right;">1.560130</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2022</td>
+<td style="text-align: right;">1.319100e+12</td>
+<td style="text-align: right;">4787.9993</td>
+<td style="text-align: right;">275501339</td>
+<td style="text-align: right;">3.554</td>
+<td style="text-align: right;">699623981271</td>
+<td style="text-align: right;">29.74534</td>
+<td style="text-align: right;">323079953660</td>
+<td style="text-align: right;">275703237974</td>
+<td style="text-align: right;">4.209464</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># regresi</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(pdb<span class="sc">~</span>pdbp<span class="sc">+</span>pop<span class="sc">+</span>peng<span class="sc">+</span>kons<span class="sc">+</span>inv<span class="sc">+</span>eks<span class="sc">+</span>imp<span class="sc">+</span>infl,<span class="at">data=</span>dat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="plot" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="plot"><span class="header-section-number">4.2</span> Plot</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">##PLOT </span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="do">### Membuat data frame</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">year =</span> <span class="fu">c</span>(<span class="dv">1990</span><span class="sc">:</span><span class="dv">2022</span>),</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">pdb =</span> <span class="fu">c</span>(<span class="fl">1.06E+11</span>, <span class="fl">1.17E+11</span>, <span class="fl">1.28E+11</span>, <span class="fl">1.58E+11</span>, <span class="fl">1.77E+11</span>, <span class="fl">2.02E+11</span>, <span class="fl">2.27E+11</span>, <span class="fl">2.16E+11</span>, <span class="fl">9.54E+10</span>, <span class="fl">1.4E+11</span>, <span class="fl">1.65E+11</span>, <span class="fl">1.6E+11</span>, <span class="fl">1.96E+11</span>, <span class="fl">2.35E+11</span>, <span class="fl">2.57E+11</span>, <span class="fl">2.86E+11</span>, <span class="fl">3.65E+11</span>, <span class="fl">4.32E+11</span>, <span class="fl">5.1E+11</span>, <span class="fl">5.4E+11</span>, <span class="fl">7.55E+11</span>, <span class="fl">8.93E+11</span>, <span class="fl">9.18E+11</span>, <span class="fl">9.13E+11</span>, <span class="fl">8.91E+11</span>, <span class="fl">8.61E+11</span>, <span class="fl">9.32E+11</span>, <span class="fl">1.02E+12</span>, <span class="fl">1.04E+12</span>, <span class="fl">1.12E+12</span>, <span class="fl">1.06E+12</span>, <span class="fl">1.19E+12</span>, <span class="fl">1.32E+12</span>),</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">pdbp =</span> <span class="fu">c</span>(<span class="fl">582.679</span>, <span class="fl">629.1607</span>, <span class="fl">678.9777</span>, <span class="fl">824.0791</span>, <span class="fl">907.4718</span>, <span class="fl">1020.147</span>, <span class="fl">1129.093</span>, <span class="fl">1054.347</span>, <span class="fl">459.1919</span>, <span class="fl">663.5232</span>, <span class="fl">770.8654</span>, <span class="fl">739.0039</span>, <span class="fl">888.9014</span>, <span class="fl">1052.413</span>, <span class="fl">1136.755</span>, <span class="fl">1249.398</span>, <span class="fl">1572.798</span>, <span class="fl">1840.33</span>, <span class="fl">2144.39</span>, <span class="fl">2239.095</span>, <span class="fl">3094.443</span>, <span class="fl">3613.801</span>, <span class="fl">3668.212</span>, <span class="fl">3602.886</span>, <span class="fl">3476.625</span>, <span class="fl">3322.582</span>, <span class="fl">3558.819</span>, <span class="fl">3839.785</span>, <span class="fl">3902.662</span>, <span class="fl">4151.228</span>, <span class="fl">3895.618</span>, <span class="fl">4334.216</span>, <span class="fl">4787.999</span>),</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">pop =</span> <span class="fu">c</span>(<span class="fl">1.82E+08</span>, <span class="fl">1.85E+08</span>, <span class="fl">1.89E+08</span>, <span class="fl">1.92E+08</span>, <span class="fl">1.95E+08</span>, <span class="fl">1.98E+08</span>, <span class="fl">2.01E+08</span>, <span class="fl">2.05E+08</span>, <span class="fl">2.08E+08</span>, <span class="fl">2.11E+08</span>, <span class="fl">2.14E+08</span>, <span class="fl">2.17E+08</span>, <span class="fl">2.2E+08</span>, <span class="fl">2.23E+08</span>, <span class="fl">2.26E+08</span>, <span class="fl">2.29E+08</span>, <span class="fl">2.32E+08</span>, <span class="fl">2.35E+08</span>, <span class="fl">2.38E+08</span>, <span class="fl">2.41E+08</span>, <span class="fl">2.44E+08</span>, <span class="fl">2.47E+08</span>, <span class="fl">2.5E+08</span>, <span class="fl">2.53E+08</span>, <span class="fl">2.56E+08</span>, <span class="fl">2.59E+08</span>, <span class="fl">2.62E+08</span>, <span class="fl">2.64E+08</span>, <span class="fl">2.67E+08</span>, <span class="fl">2.7E+08</span>, <span class="fl">2.72E+08</span>, <span class="fl">2.74E+08</span>, <span class="fl">2.76E+08</span>),</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">peng =</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="fl">2.62</span>, <span class="fl">2.73</span>, <span class="fl">2.78</span>, <span class="fl">4.37</span>, <span class="fl">4.597</span>, <span class="fl">4.86</span>, <span class="fl">4.68</span>, <span class="fl">5.46</span>, <span class="fl">6.36</span>, <span class="fl">6.08</span>, <span class="fl">6.08</span>, <span class="fl">6.6</span>, <span class="fl">6.66</span>, <span class="fl">7.3</span>, <span class="fl">7.94</span>, <span class="fl">7.55</span>, <span class="fl">8.06</span>, <span class="fl">7.21</span>, <span class="fl">6.11</span>, <span class="fl">5.61</span>, <span class="fl">5.15</span>, <span class="fl">4.47</span>, <span class="fl">4.34</span>, <span class="fl">4.05</span>, <span class="fl">4.51</span>, <span class="fl">4.3</span>, <span class="fl">3.78</span>, <span class="fl">4.39</span>, <span class="fl">3.59</span>, <span class="fl">4.25</span>, <span class="fl">3.83</span>, <span class="fl">3.554</span>),</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">kons =</span> <span class="fu">c</span>(<span class="fl">6.74E+10</span>, <span class="fl">7.49E+10</span>, <span class="fl">8.05E+10</span>, <span class="fl">9.25E+10</span>, <span class="fl">1.06E+11</span>, <span class="fl">1.24E+11</span>, <span class="fl">1.42E+11</span>, <span class="fl">1.33E+11</span>, <span class="fl">6.47E+10</span>, <span class="fl">1.04E+11</span>, <span class="fl">1.02E+11</span>, <span class="fl">1.01E+11</span>, <span class="fl">1.32E+11</span>, <span class="fl">1.6E+11</span>, <span class="fl">1.71E+11</span>, <span class="fl">1.84E+11</span>, <span class="fl">2.28E+11</span>, <span class="fl">2.75E+11</span>, <span class="fl">3.09E+11</span>, <span class="fl">3.17E+11</span>, <span class="fl">4.24E+11</span>, <span class="fl">4.95E+11</span>, <span class="fl">5.18E+11</span>, <span class="fl">5.19E+11</span>, <span class="fl">5.09E+11</span>, <span class="fl">4.95E+11</span>, <span class="fl">5.39E+11</span>, <span class="fl">5.82E+11</span>, <span class="fl">5.94E+11</span>, <span class="fl">6.48E+11</span>, <span class="fl">6.24E+11</span>, <span class="fl">6.6E+11</span>, <span class="fl">7E+11</span>),</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">inv =</span> <span class="fu">c</span>(<span class="fl">32.70769</span>, <span class="fl">31.86943</span>, <span class="fl">30.17583</span>, <span class="fl">28.28067</span>, <span class="fl">29.57069</span>, <span class="fl">30.42981</span>, <span class="fl">31.60236</span>, <span class="fl">30.30768</span>, <span class="fl">27.42951</span>, <span class="fl">22.13876</span>, <span class="fl">22.2457</span>, <span class="fl">22.53927</span>, <span class="fl">21.40407</span>, <span class="fl">25.5985</span>, <span class="fl">24.05637</span>, <span class="fl">25.08141</span>, <span class="fl">25.40022</span>, <span class="fl">24.92028</span>, <span class="fl">27.81624</span>, <span class="fl">30.98519</span>, <span class="fl">32.88012</span>, <span class="fl">32.98433</span>, <span class="fl">35.07159</span>, <span class="fl">33.83136</span>, <span class="fl">34.60034</span>, <span class="fl">34.06279</span>, <span class="fl">33.85874</span>, <span class="fl">33.71059</span>, <span class="fl">34.57059</span>, <span class="fl">33.78014</span>, <span class="fl">32.34341</span>, <span class="fl">31.44898</span>, <span class="fl">29.74534</span>),</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">eks =</span> <span class="fu">c</span>(<span class="fl">2.9E+10</span>, <span class="fl">3.31E+10</span>, <span class="fl">3.88E+10</span>, <span class="fl">4.23E+10</span>, <span class="fl">4.69E+10</span>, <span class="fl">5.32E+10</span>, <span class="fl">5.87E+10</span>, <span class="fl">6.01E+10</span>, <span class="fl">5.06E+10</span>, <span class="fl">4.97E+10</span>, <span class="fl">6.76E+10</span>, <span class="fl">6.26E+10</span>, <span class="fl">6.4E+10</span>, <span class="fl">7.16E+10</span>, <span class="fl">8.27E+10</span>, <span class="fl">9.74E+10</span>, <span class="fl">1.13E+11</span>, <span class="fl">1.27E+11</span>, <span class="fl">1.52E+11</span>, <span class="fl">1.3E+11</span>, <span class="fl">1.83E+11</span>, <span class="fl">2.35E+11</span>, <span class="fl">2.26E+11</span>, <span class="fl">2.18E+11</span>, <span class="fl">2.11E+11</span>, <span class="fl">1.82E+11</span>, <span class="fl">1.78E+11</span>, <span class="fl">2.05E+11</span>, <span class="fl">2.19E+11</span>, <span class="fl">2.08E+11</span>, <span class="fl">1.84E+11</span>, <span class="fl">2.54E+11</span>, <span class="fl">3.23E+11</span>),</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">imp =</span> <span class="fu">c</span>(<span class="fl">2.72E+10</span>, <span class="fl">3.09E+10</span>, <span class="fl">3.47E+10</span>, <span class="fl">3.76E+10</span>, <span class="fl">4.49E+10</span>, <span class="fl">5.59E+10</span>, <span class="fl">6.01E+10</span>, <span class="fl">6.07E+10</span>, <span class="fl">4.12E+10</span>, <span class="fl">3.84E+10</span>, <span class="fl">5.03E+10</span>, <span class="fl">4.94E+10</span>, <span class="fl">5.16E+10</span>, <span class="fl">5.43E+10</span>, <span class="fl">7.07E+10</span>, <span class="fl">8.55E+10</span>, <span class="fl">9.34E+10</span>, <span class="fl">1.1E+11</span>, <span class="fl">1.47E+11</span>, <span class="fl">1.15E+11</span>, <span class="fl">1.69E+11</span>, <span class="fl">2.13E+11</span>, <span class="fl">2.29E+11</span>, <span class="fl">2.26E+11</span>, <span class="fl">2.17E+11</span>, <span class="fl">1.79E+11</span>, <span class="fl">1.71E+11</span>, <span class="fl">1.95E+11</span>, <span class="fl">2.3E+11</span>, <span class="fl">2.13E+11</span>, <span class="fl">1.66E+11</span>, <span class="fl">2.23E+11</span>, <span class="fl">2.76E+11</span>),</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">infl =</span> <span class="fu">c</span>(<span class="fl">7.819191</span>, <span class="fl">9.419058</span>, <span class="fl">7.523517</span>, <span class="fl">9.671893</span>, <span class="fl">8.532005</span>, <span class="fl">9.420323</span>, <span class="fl">7.973281</span>, <span class="fl">6.226142</span>, <span class="fl">58.45104</span>, <span class="fl">20.47783</span>, <span class="fl">3.688619</span>, <span class="fl">11.50011</span>, <span class="fl">11.90012</span>, <span class="fl">6.757317</span>, <span class="fl">6.06406</span>, <span class="fl">10.4532</span>, <span class="fl">13.10867</span>, <span class="fl">6.406563</span>, <span class="fl">10.22666</span>, <span class="fl">4.386416</span>, <span class="fl">5.134204</span>, <span class="fl">5.356048</span>, <span class="fl">4.2795</span>, <span class="fl">6.412513</span>, <span class="fl">6.394925</span>, <span class="fl">6.363121</span>, <span class="fl">3.525805</span>, <span class="fl">3.808798</span>, <span class="fl">3.198346</span>, <span class="fl">3.030587</span>, <span class="fl">1.920968</span>, <span class="fl">1.56013</span>, <span class="fl">4.209464</span>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengubah format data frame dari wide ke long</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>data_long <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(pdb, pdbp, pop, peng, kons, inv, eks, imp, infl), <span class="at">names_to =</span> <span class="st">"Variable"</span>, <span class="at">values_to =</span> <span class="st">"Value"</span>)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_long, <span class="fu">aes</span>(<span class="at">x=</span>year, <span class="at">y=</span>Value, <span class="at">color=</span>Variable)) <span class="sc">+</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Plot Tahun vs Variabel"</span>, <span class="at">x=</span><span class="st">"Tahun"</span>, <span class="at">y=</span><span class="st">"Variabel"</span>) <span class="sc">+</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_discrete</span>(<span class="at">name =</span> <span class="st">"Variabel"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1 row containing missing values (`geom_line()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dat<span class="sc">$</span>resid <span class="ot">&lt;-</span> <span class="fu">resid</span>(reg1)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat plot error untuk setiap variabel independen</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>variables <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"pdbp"</span>, <span class="st">"pop"</span>, <span class="st">"peng"</span>, <span class="st">"kons"</span>, <span class="st">"inv"</span>, <span class="st">"eks"</span>, <span class="st">"imp"</span>, <span class="st">"infl"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(variables)) {</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(dat[[variables[i]]], dat<span class="sc">$</span>resid, <span class="at">xlab=</span>variables[i], <span class="at">ylab=</span><span class="st">"Error"</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>) <span class="co"># membuat garis horizontal di y=0</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-3.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-4.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-5.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-6.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-7.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-8.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="analisis-masalah" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.3</span> Analisis masalah</h3>
+<p>Hasil regresinya adalah</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = pdb ~ pdbp + pop + peng + kons + inv + eks + imp + 
+    infl, data = dat)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-9.889e+09 -5.677e+09  4.955e+08  3.307e+09  1.575e+10 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) -4.160e+10  8.249e+10  -0.504 0.618619    
+pdbp         8.480e+07  2.994e+07   2.833 0.009203 ** 
+pop          5.125e+02  4.108e+02   1.248 0.224240    
+peng        -1.390e+10  2.100e+09  -6.621 7.56e-07 ***
+kons         1.052e+00  1.700e-01   6.186 2.16e-06 ***
+inv         -1.412e+09  1.037e+09  -1.361 0.186234    
+eks          9.059e-01  2.103e-01   4.308 0.000241 ***
+imp         -4.926e-01  1.661e-01  -2.965 0.006741 ** 
+infl         1.894e+08  1.865e+08   1.016 0.319956    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 7.671e+09 on 24 degrees of freedom
+Multiple R-squared:  0.9997,    Adjusted R-squared:  0.9996 
+F-statistic: 1.086e+04 on 8 and 24 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>Berdasarkan hasil regresi yang Anda berikan, berikut adalah interpretasinya:</p>
+<ol type="1">
+<li><p><strong>Nilai R-squared</strong> sebesar 0,9996 menunjukkan bahwa model regresi dapat menjelaskan 99,96% variasi dalam pertumbuhan ekonomi yang dijelaskan oleh variabel-variabel independen dalam model.</p></li>
+<li><p><strong>Intercept</strong> sebesar -4,16 tidak signifikan, yang berarti bahwa jika semua variabel independen bernilai nol, pertumbuhan ekonomi diharapkan akan berkurang sebesar 4,16 unit, tetapi ini tidak signifikan.</p></li>
+<li><p><strong>PDB per kapita</strong> memiliki koefisien positif signifikan sebesar 8,48, yang berarti bahwa peningkatan PDB per kapita sebesar satu unit akan meningkatkan pertumbuhan ekonomi sebesar 8,48 unit.</p></li>
+<li><p><strong>Populasi</strong> memiliki koefisien positif sebesar 5,15 tetapi tidak signifikan, yang berarti bahwa peningkatan populasi tidak memiliki pengaruh signifikan terhadap pertumbuhan ekonomi.</p></li>
+<li><p><strong>Angka pengangguran</strong> memiliki koefisien negatif sangat signifikan sebesar -1,39, yang berarti bahwa peningkatan angka pengangguran sebesar satu unit akan menurunkan pertumbuhan ekonomi sebesar 1,39 unit.</p></li>
+<li><p><strong>Nilai konsumsi masyarakat</strong> memiliki koefisien positif sangat signifikan sebesar 1,05, yang berarti bahwa peningkatan nilai konsumsi masyarakat sebesar satu unit akan meningkatkan pertumbuhan ekonomi sebesar 1,05 unit.</p></li>
+<li><p><strong>Nilai investasi luar negeri</strong> memiliki koefisien negatif sebesar -1,41 tetapi tidak signifikan, yang berarti bahwa peningkatan investasi luar negeri tidak memiliki pengaruh signifikan terhadap pertumbuhan ekonomi.</p></li>
+<li><p><strong>Nilai ekspor</strong> memiliki koefisien positif sangat signifikan sebesar 9,05, yang berarti bahwa peningkatan nilai ekspor sebesar satu unit akan meningkatkan pertumbuhan ekonomi sebesar 9,05 unit.</p></li>
+<li><p><strong>Nilai impor</strong> memiliki koefisien negatif signifikan sebesar -4,92, yang berarti bahwa peningkatan nilai impor sebesar satu unit akan menurunkan pertumbuhan ekonomi sebesar 4,92 unit.</p></li>
+<li><p><strong>Nilai inflasi</strong> memiliki koefisien positif sebesar 1,89 tetapi tidak signifikan, yang berarti bahwa peningkatan inflasi tidak memiliki pengaruh signifikan terhadap pertumbuhan ekonomi.</p></li>
+</ol>
+</section>
+<section id="kesimpulan" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">4.4</span> Kesimpulan</h3>
+<p>Berdasarkan hasil analisis regresi, berikut adalah kesimpulan dan asumsi yang dapat diambil:</p>
+<ol type="1">
+<li><p><strong>PDB per kapita</strong>: Peningkatan PDB per kapita berdampak positif dan signifikan terhadap pertumbuhan ekonomi. Hal ini mungkin karena peningkatan PDB per kapita mencerminkan peningkatan produktivitas dan pendapatan individu, yang pada gilirannya dapat meningkatkan konsumsi dan investasi, dua komponen penting dari pertumbuhan ekonomi.</p></li>
+<li><p><strong>Populasi</strong>: Meskipun memiliki koefisien positif, populasi tidak signifikan dalam mempengaruhi pertumbuhan ekonomi. Hal ini mungkin karena pertumbuhan populasi tidak selalu berarti peningkatan tenaga kerja atau konsumen. Faktor lain seperti struktur demografi, tingkat pendidikan, dan kesehatan juga berperan penting.</p></li>
+<li><p><strong>Angka Pengangguran</strong>: Angka pengangguran berdampak negatif dan sangat signifikan terhadap pertumbuhan ekonomi. Hal ini sesuai dengan teori ekonomi yang menyatakan bahwa pengangguran menunjukkan adanya sumber daya (tenaga kerja) yang tidak dimanfaatkan secara efisien.</p></li>
+<li><p><strong>Nilai Konsumsi Masyarakat</strong>: Nilai konsumsi masyarakat berdampak positif dan sangat signifikan terhadap pertumbuhan ekonomi. Hal ini menunjukkan bahwa konsumsi masyarakat merupakan pendorong utama pertumbuhan ekonomi di Indonesia.</p></li>
+<li><p><strong>Nilai Investasi Luar Negeri</strong>: Meskipun memiliki koefisien negatif, nilai investasi luar negeri tidak signifikan dalam mempengaruhi pertumbuhan ekonomi. Hal ini mungkin karena faktor lain seperti stabilitas politik dan ekonomi, infrastruktur, dan kebijakan pemerintah juga mempengaruhi efektivitas investasi luar negeri.</p></li>
+<li><p><strong>Nilai Ekspor</strong>: Nilai ekspor berdampak positif dan sangat signifikan terhadap pertumbuhan ekonomi. Hal ini menunjukkan bahwa ekspor merupakan komponen penting dalam perekonomian Indonesia.</p></li>
+<li><p><strong>Nilai Impor</strong>: Nilai impor berdampak negatif dan signifikan terhadap pertumbuhan ekonomi. Hal ini mungkin karena impor dapat mengurangi permintaan domestik untuk barang dan jasa buatan dalam negeri.</p></li>
+<li><p><strong>Nilai Inflasi</strong>: Meskipun memiliki koefisien positif, inflasi tidak signifikan dalam mempengaruhi pertumbuhan ekonomi. Hal ini mungkin karena tingkat inflasi yang moderat dapat merangsang pertumbuhan ekonomi, tetapi inflasi yang tinggi dapat menghambat pertumbuhan ekonomi.</p></li>
+</ol>
+<p>Dalam konteks perekonomian Indonesia dari tahun 1990 hingga 2022, terdapat beberapa kejadian penting yang mungkin mempengaruhi hasil analisis ini, seperti krisis ekonomi Asia pada tahun 1997-1998, reformasi politik pada akhir tahun 1990-an, dan dampak pandemi COVID-19 pada tahun 2020-2022. Oleh karena itu, penting untuk mempertimbangkan konteks historis dan kejadian penting ini saat menafsirkan hasil analisis.</p>
+</section>
+</section>
+<section id="referensi" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="referensi"><span class="header-section-number">5</span> Referensi</h2>
+<p>PENGARUH EKSPOR DAN IMPOR TERHADAP PERTUMBUHAN EKONOMI DI INDONESIA. https://www.researchgate.net/publication/363627071_PENGARUH_EKSPOR_DAN_IMPOR_TERHADAP_PERTUMBUHAN_EKONOMI_DI_INDONESIA/fulltext/637e7d821766b34c544c5111/PENGARUH-EKSPOR-DAN-IMPOR-TERHADAP-PERTUMBUHAN-EKONOMI-DI-INDONESIA.pdf.</p>
+<p>ANALISIS PENGARUH EKSPOR DAN IMPOR TERHADAP PERTUMBUHAN EKONOMI DI …. https://online-journal.unja.ac.id/mankeu/article/download/12512/10911/34656.</p>
+<p>PENGARUH FOREIGN DIRECT INVESTMENT (FDI) DAN EKSPOR TERHADAP …. https://ejournal.unib.ac.id/convergence-jep/article/download/28471/12700.</p>
+<p>PENGARUH PENGANGGURAN, TENAGA KERJA DAN INFLASI TERHADAP PERTUMBUHAN …. https://jurnal.umsb.ac.id/index.php/menaraekonomi/article/view/4496.</p>
+<p>Analisis Pengaruh Variabel Makroekonomi terhadap Pertumbuhan Ekonomi …. https://www.researchgate.net/publication/373836653_Analisis_Pengaruh_Variabel_Makroekonomi_terhadap_Pertumbuhan_Ekonomi_Selama_Periode_2001-2022/fulltext/64ffc100849bbb203b914405/Analisis-Pengaruh-Variabel-Makroekonomi-terhadap-Pertumbuhan-Ekonomi-Selama-Periode-2001-2022.pdf.</p>
+<p>ANALISIS PENGARUH EKSPOR TERHADAP PERTUMBUHAN EKONOMI INDONESIA - Kemendag. https://jurnal.kemendag.go.id/index.php/bilp/article/download/185/144.</p>
+<p>ANALISIS PENGARUH EKSPOR DAN IMPOR TERHADAP PERTUMBUHAN EKONOMI DI …. https://online-journal.unja.ac.id/mankeu/article/view/12512.</p>
+<p>Pengaruh Inflasi dan Tingkat Pengangguran terhadap Pertumbuhan Ekonomi …. https://www.kompasiana.com/yopimardiani4493/65826be4de948f48532dd8f2/pengaruh-inflasi-dan-tingkat-pengangguran-terhadap-pertumbuhan-ekonomi-di-indonesia-tahun-2017-2021.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
